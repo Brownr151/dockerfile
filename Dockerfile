@@ -10,8 +10,8 @@ RUN apt-get install -y php-pear php-fpm php-dev php-zip php-curl php-xmlrpc php-
 RUN apt-get install -y apache2
 
 #Copy application file
-RUN rm -rf /var/www/html/*
-ADD phpWebsite /var/www/html
+#RUN rm -rf /var/www/html/*
+#ADD phpWebsite /var/www/html
 
 #Open port 80
 EXPOSE 80
